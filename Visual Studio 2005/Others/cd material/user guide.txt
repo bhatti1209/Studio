@@ -1,0 +1,29 @@
+                                    Installation Instructions      
+
+1) Install jdk1.6.exe 
+2)Install JCreator from the CD provided.
+3) Set path Environment variable using following steps
+   
+    a) go to My Computer->right click-> properties
+    b) go to Advanced tab
+    c) click Environment variables
+    d) double click path variable under  the list of system        variables
+    e) add a semicolon(;) to the exnd of existing path and        paste the path of <javahome>/bin after it
+      
+       For eg. 
+              
+            "  ;C:\Program Files\Java\jdk1.6.0\bin;.;  "
+
+        the ;.; in the end of the above string signifies that         current directory is in the path along with         <javahome>/bin
+
+3) Copy the folder "final project" from the CD provided
+4) Open the JCreator and navigate to the final project folder.
+
+
+                     Compilation Guide
+
+1)Open the JCreator from the Start Menu.
+2)Go to  File->Open
+3)Browse the Final project folder and select DownloadManager java file.
+4)Go to Tools->Compile file->Execute file.
+5)Type the Name of the URL in the Data Download Manager window ine the Specified column.

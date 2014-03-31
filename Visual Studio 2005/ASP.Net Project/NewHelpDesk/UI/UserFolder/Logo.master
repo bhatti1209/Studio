@@ -1,0 +1,108 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Logo.master.cs" Inherits="UI_Logo" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Admin Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 84%; height: 1%">
+            <tr>
+                <td style="height: 1px; width: 195px;" valign="top">
+                    <img src="../../Images/Helpdesk%20logo.jpg" style="width: 971px; height: 164px" /></td>
+            </tr>
+            <tr>
+                <td style="height: 7px; width: 195px;" valign="top">
+                    <table id="TABLE1" style="position: fixed; background-color: #ddbd8e; width: 971px; height: 25px;">
+                        <tr>
+                            <td style="width: 1202px; color: white; height: 14px; background-color: #ddbd8e">
+                                <strong style="background-color: #ddbd8e">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                                    WELCOME !!!</strong> &nbsp; &nbsp;<asp:Label ID="Namelabel" runat="server" Text="Name"
+                                    Visible="False" Font-Bold="True"></asp:Label>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:LinkButton ID="Homebutton" runat="server" Font-Bold="True" ForeColor="White"
+                                    PostBackUrl="~/UI/UserFolder/WelcomePage.aspx" style="left: 724px; position: absolute; top: 181px">Home</asp:LinkButton>
+                                <asp:LinkButton ID="PassButton" runat="server" Font-Bold="True" ForeColor="White"
+                                    PostBackUrl="~/UI/UserFolder/ChangePassword.aspx" Style="left: 779px; position: absolute;
+                                    top: 182px">Change Password</asp:LinkButton>
+                                &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                                <asp:LinkButton ID="logoutbutton" runat="server" Font-Bold="True" ForeColor="White" style="left: 912px; position: absolute; top: 182px" PostBackUrl="~/UI/Login/Loginpage.aspx">Logout</asp:LinkButton></td>
+                        </tr>
+                    </table>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 971px; height: 800px">
+            <tr>
+                <td style="width: 147px; height: 272px; background-color: #22297a;" valign="top">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    &nbsp;<asp:TreeView ID="TreeView1" runat="server" ImageSet="Arrows" ShowLines="True" Font-Bold="False" Font-Italic="False" ForeColor="White" Height="296px" LineImagesFolder="~/TreeLineImages" Width="164px" style="left: 25px; position: absolute; top: 326px" NodeIndent="40">
+                        <ParentNodeStyle Font-Bold="False" ForeColor="White" />
+                        <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                        <SelectedNodeStyle Font-Underline="True" ForeColor="Silver" HorizontalPadding="0px"
+                            VerticalPadding="0px" />
+                        <Nodes>
+                            <asp:TreeNode Text="Log Your Call" Value="Log Your Call" NavigateUrl="~/UI/UserFolder/LogYourCall.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="My Call Status" Value="My Call Status" NavigateUrl="~/UI/UserFolder/MyCallStatus.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="Search Calls" Value="Search Calls" NavigateUrl="~/UI/UserFolder/SearchCalls.aspx"></asp:TreeNode>
+                                <asp:TreeNode NavigateUrl="~/UI/UserFolder/EmailIDCreation.aspx" Text="E-Mail ID Creation Request"
+                                    Value="E-Mail ID Creation Request"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/UI/UserFolder/Vendordetails.aspx" Text="Vendor Details"
+                                Value="Vendor Details"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/UI/UserFolder/SiteDetails.aspx" Text="Site Details"
+                                Value="Site Details"></asp:TreeNode>
+                        </Nodes>
+                        <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="5px"
+                            NodeSpacing="0px" VerticalPadding="0px" BorderStyle="None" ChildNodesPadding="4px" />
+                        <RootNodeStyle Font-Bold="False" ForeColor="White" />
+                        <LeafNodeStyle ForeColor="White" NodeSpacing="8px" VerticalPadding="4px" />
+                    </asp:TreeView>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </td>
+                <td style="width: 494px; height: 272px; background-color: #22297a;" valign="top">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                </td>
+            </tr>
+        </table>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>

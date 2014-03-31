@@ -1,0 +1,30 @@
+﻿<UserCombinePreferences version="1.0" filename="/windows/D/Programs/Visual Basic/P2P Chat Server/p2pserver/p2pserver/p2pserver.mds">
+  <Files>
+    <File name="Welcome" />
+    <File name="Program.cs" line="2" column="34" />
+    <File name="Form1.Designer.cs" line="1" column="1" />
+    <File name="Form1.cs" line="5" column="22" />
+  </Files>
+  <Views>
+    <ViewMemento id="ProjectPad">
+      <Node expanded="True">
+        <Node name="p2pserver" expanded="True">
+          <Node name="Form1.cs" selected="True" />
+        </Node>
+      </Node>
+    </ViewMemento>
+    <ViewMemento id="ClassPad">
+      <Node expanded="True" />
+    </ViewMemento>
+    <ViewMemento id="MonoDevelop.NUnit.TestPad">
+      <Node />
+    </ViewMemento>
+    <ViewMemento id="ConnectionManagerPad">
+      <Node />
+    </ViewMemento>
+  </Views>
+  <Properties>
+    <Property key="ActiveWindow" value="/windows/D/Programs/Visual Basic/P2P Chat Server/p2pserver/p2pserver/Form1.cs" />
+    <Property key="ActiveConfiguration" value="Debug|Any CPU" />
+  </Properties>
+</UserCombinePreferences>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="041c9a22-9483-41f8-b6d6-842a10704edd" Version="1.0.0.0" Publisher="CN=Bharat" />
+  <Properties>
+    <DisplayName>HelloWorld</DisplayName>
+    <PublisherDisplayName>Bharat</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="Views/Index.html">
+      <VisualElements DisplayName="HelloWorld-Web" Logo="Content\Images\logo.png" SmallLogo="Content\Images\smalllogo.png" Description="Hello World App Using Javascript" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Content\Images\splashscreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

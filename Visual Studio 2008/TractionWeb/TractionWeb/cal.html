@@ -1,0 +1,128 @@
+<HTML>
+<HEAD>
+<TITLE>Calendar</TITLE>
+<style type="text/css">
+ <!--
+  span.heading {font-size: 16;
+                font-weight: bold;
+                font-family: arial
+               }
+  a {color: green;
+     text-decoration: none
+    }
+  a:visited {color: green;
+             text-decoration: none
+            }
+  a.day {color: green}
+  a.day:hover {background-color: #D0D0D0}
+  a.today {color: red}
+  a.today:hover {background-color: #D0D0D0}
+  p.close {text-align: center}
+  td {text-align: center;
+      font-size: 12;
+      font-family: arial;
+      background-color: white
+     }
+  td.traction { color: #2D4B9F;
+                font-style: italic;
+                font-weight: bold
+              }
+  td.nav {background-color: #B7E1B2}
+  td.weekheader { width: 14%;
+                  color: black;
+                  font-weight: bold
+                }
+  td.weekday {width: 14%}
+  td.weekend { width: 14%;
+               background-color: #B7E1B2
+             }
+  td.nonmonthday { width: 14%;
+                   color: gray
+                 }
+  td.nonmonthend { width: 14%;
+                   background-color: #B7E1B2;
+                   color: gray
+                 }
+-->
+</style>
+<script language="JavaScript" > <!--
+// create an array to store the Month Names as an Array
+var arrMonths = new Array(
+"January"
+,"February"
+,"March"
+,"April"
+,"May"
+,"June"
+,"July"
+,"August"
+,"September"
+,"October"
+,"November"
+,"December"
+);
+// create an array to store the Day abbreviations as an Array
+var arrDays = new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+var strPreviousYearMsg = "Previous Year";
+var strPreviousMonthMsg = "Previous Month";
+var strNextMonthMsg = "Next Month";
+var strNextYearMsg = "Next Year";
+var strCloseMsg = "Close Calendar";
+var strDfltStatus = "Choose Date";
+var strDestForm = "EditForm";
+var strDestField = "strdob_";
+//--></script>
+<script language="JavaScript" src="http://brcirsa1n.amoco.com:7790/oratraqajs/tractionCalendar.js"> <!--
+//--></script>
+</HEAD>
+<BODY>
+<script language="JavaScript"> <!--
+  defaultstatus = strDfltStatus;
+  setStatusMessage(strDfltStatus);
+//--></script>
+<span class="heading" id="headerSpan">
+  <script language="JavaScript"> <!--
+    document.writeln(getMonthYearHeader());
+  //--></script>
+</span>
+<span id="navigationSpan">
+<TABLE  border="1" bgcolor="#B7E1B2" width="100%" cellspacing="0" cellpadding="0">
+<TR>
+<td class="nav">
+  <a href="javascript:changeYear(-1);" onMouseOver="return setStatusMessage(strPreviousYearMsg);" onMouseOut="return setStatusMessage(strDfltStatus);">
+    <img src="http://brcirsa1n.amoco.com:7790/oratraqaimages/prev_year.gif" border="0" alt="Previous Year">
+  </a>
+</td>
+<td class="nav">
+  <a href="javascript:changeMonth(-1);" onMouseOver="return setStatusMessage(strPreviousMonthMsg);" onMouseOut="return setStatusMessage(strDfltStatus);">
+    <img src="http://brcirsa1n.amoco.com:7790/oratraqaimages/prev_month.gif" border="0" alt="Previous Month">
+  </a>
+</td>
+<td class="traction">
+tr@ction<img src="http://brcirsa1n.amoco.com:7790/oratraqaimages/swish.gif" border="0">
+</td>
+<td class="nav">
+  <a href="javascript:changeMonth(1);" onMouseOver="return setStatusMessage(strNextMonthMsg);" onMouseOut="return setStatusMessage(strDfltStatus);">
+    <img src="http://brcirsa1n.amoco.com:7790/oratraqaimages/next_month.gif" border="0" alt="Next Month">
+  </a>
+</td>
+<td class="nav">
+  <a href="javascript:changeYear(1);" onMouseOver="return setStatusMessage(strNextYearMsg);" onMouseOut="return setStatusMessage(strDfltStatus);">
+    <img src="http://brcirsa1n.amoco.com:7790/oratraqaimages/next_year.gif" border="0" alt="Next Year">
+  </a>
+</td>
+</TR>
+</TABLE>
+</span>
+<BR>
+<span id="calendar">
+  <script language = "JavaScript"> <!--
+    document.writeln(getCalendar());
+  //--></script>
+</span>
+<p class="close">
+<a href="javascript:window.close()" onMouseOver="return setStatusMessage(strCloseMsg);" onMouseOut="return setStatusMessage(strDfltStatus);">
+Close Calendar
+</a>
+</BODY>
+</HTML>

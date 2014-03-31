@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "HelloWorld", "HelloWorld\HelloWorld.jsproj", "{041C9A22-9483-41F8-B6D6-842A10704EDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Debug|ARM.ActiveCfg = Debug|ARM
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Debug|ARM.Build.0 = Debug|ARM
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Debug|ARM.Deploy.0 = Debug|ARM
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Debug|x64.ActiveCfg = Debug|x64
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Debug|x64.Build.0 = Debug|x64
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Debug|x64.Deploy.0 = Debug|x64
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Debug|x86.ActiveCfg = Debug|x86
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Debug|x86.Build.0 = Debug|x86
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Debug|x86.Deploy.0 = Debug|x86
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Release|ARM.ActiveCfg = Release|ARM
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Release|ARM.Build.0 = Release|ARM
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Release|ARM.Deploy.0 = Release|ARM
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Release|x64.ActiveCfg = Release|x64
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Release|x64.Build.0 = Release|x64
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Release|x64.Deploy.0 = Release|x64
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Release|x86.ActiveCfg = Release|x86
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Release|x86.Build.0 = Release|x86
+		{041C9A22-9483-41F8-B6D6-842A10704EDD}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

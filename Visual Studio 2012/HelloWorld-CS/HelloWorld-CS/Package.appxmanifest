@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="72334bf9-3c3f-4a3b-89e5-596a36c1c682" Publisher="CN=Bharat" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>HelloWorld-CS</DisplayName>
+    <PublisherDisplayName>Bharat</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="HelloWorld_CS.App">
+      <VisualElements DisplayName="HelloWorld-C#" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Hello World App Using C#/XAML" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
